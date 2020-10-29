@@ -8,7 +8,7 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
-  h1,p,a{
+  h1,p,a,span,strong{
     font-family: Roboto, sans-serif;
   }
 `;

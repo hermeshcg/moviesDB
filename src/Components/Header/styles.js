@@ -7,10 +7,9 @@ export const Container = styled.div`
 
   width: 100%;
   padding: 25px;
-  background: #d9e4dd;
-  border-radius: 4px;
+  background: #151965;
   h1 {
-    color: #cd2012;
+    color: #fff;
   }
   .search-area {
     margin: 10px;
@@ -19,17 +18,16 @@ export const Container = styled.div`
     justify-content: center;
     input {
       height: 40px;
-      width: 80%;
+      width: 85%;
       border: 1px solid;
       border-bottom-left-radius: 4px;
       border-top-left-radius: 4px;
+      background: #c4c4c4;
     }
-    input:hover {
-      border: 1px solid #cd2012;
-    }
+
     button {
       height: 40px;
-      width: 20%;
+      width: 15%;
       border: 1px solid;
       border-left: none;
       border-bottom-right-radius: 4px;
@@ -38,7 +36,7 @@ export const Container = styled.div`
     }
     button:hover {
       background: #bbb;
-      border: 1px solid #cd2012;
+      border: 1px solid #151965;
     }
   }
   .themdb {
@@ -47,12 +45,16 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
 
+    p {
+      color: #fff;
+    }
+
     a {
       text-decoration: dashed;
-      color: #555555;
+      color: #ccc;
     }
     a:hover {
-      color: #cd2012;
+      color: #fff;
     }
   }
 `;

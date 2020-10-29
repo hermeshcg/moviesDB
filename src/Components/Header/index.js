@@ -1,22 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FaSearch } from 'react-icons/fa';
 
 import { Container } from './styles';
 
-import api from '../../services/api';
-
-function Header() {
-  const [movieToSearch, setMovieToSearch] = useState('');
-
-  async function handleSearchMovie() {
-    /* const response = await api.get(
-      `movie/popular?api_key=760b1c8986bdec960d27b984c56bea47`
-    );
-
-    const data = response.data;
-    setMovies(data); */
-  }
-
+function Header({ handleSearchMovie, setMovieToSearch }) {
   return (
     <Container>
       <div className="title-area">
@@ -35,7 +22,7 @@ function Header() {
       <div className="themdb">
         <p>Data provided by: </p>
         <a
-          href="https://www.themoviedb.org/documentation/api"
+          href="http://www.omdbapi.com"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -2,7 +2,7 @@ import React from 'react';
 import { FaSearch } from 'react-icons/fa';
 
 import { Container } from './styles';
-
+//igonre
 function Header({ handleSearchMovie, setMovieToSearch }) {
   return (
     <Container>

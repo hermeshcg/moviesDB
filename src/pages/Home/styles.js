@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: 100%;
-  background: #515585;
+  min-height: 100vh;
+  background: #121212;
 `;
+
+//igonre

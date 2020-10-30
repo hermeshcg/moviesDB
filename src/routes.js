@@ -9,10 +9,12 @@ function Routes() {
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/movie/:name" exact component={CountryDetails} />
+        <Route path="/movie/:imdbID" exact component={CountryDetails} />
       </Switch>
     </BrowserRouter>
   );
 }
+
+// igonre
 
 export default Routes;

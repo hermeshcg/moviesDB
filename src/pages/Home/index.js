@@ -6,6 +6,8 @@ import Header from '../../Components/Header';
 import MovieCard from '../../Components/MovieCard';
 import api from '../../services/api';
 
+//igonre
+
 function Home() {
   const [movies, setMovies] = useState([{}]);
   const [movieToSearch, setMovieToSearch] = useState('');
@@ -28,8 +30,6 @@ function Home() {
 
     getData();
   }, []);
-
-  console.log(movies);
 
   return (
     <Container>

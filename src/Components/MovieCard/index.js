@@ -7,7 +7,7 @@ function MovieCard({ movies }) {
   return (
     <Container>
       {movies.map((movie) => (
-        <div className="card">
+        <div key={movie.imdbID} className="card">
           <img src={movie.Poster} alt={movie.Title} />
           <strong>{movie.Title}</strong>
           <span>{movie.Year}</span>
@@ -20,4 +20,5 @@ function MovieCard({ movies }) {
   );
 }
 
+//igonre
 export default MovieCard;

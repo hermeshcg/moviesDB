@@ -1,4 +1,3 @@
-import Header from './Components/Header';
 import GlobalStyle from './styles/global';
 
 import Routes from './routes';

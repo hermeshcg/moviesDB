@@ -7,10 +7,12 @@ export const Container = styled.div`
 
   width: 100%;
   padding: 25px;
-  background: #151965;
+  background: linear-gradient(180deg, #151935, #121212);
   h1 {
     color: #fff;
   }
+
+  //igonre
   .search-area {
     margin: 10px;
     display: flex;
@@ -22,7 +24,7 @@ export const Container = styled.div`
       border: 1px solid;
       border-bottom-left-radius: 4px;
       border-top-left-radius: 4px;
-      background: #c4c4c4;
+      background: #eee;
     }
 
     button {
@@ -36,7 +38,6 @@ export const Container = styled.div`
     }
     button:hover {
       background: #bbb;
-      border: 1px solid #151965;
     }
   }
   .themdb {
@@ -55,6 +56,7 @@ export const Container = styled.div`
     }
     a:hover {
       color: #fff;
+      font-size: 20px;
     }
   }
 `;

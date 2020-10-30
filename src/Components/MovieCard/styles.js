@@ -9,7 +9,7 @@ export const Container = styled.div`
   padding-left: 75px;
   .card {
     text-align: center;
-    background: #32407b;
+    background: #484848;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,9 +34,20 @@ export const Container = styled.div`
       text-decoration: none;
       color: #fff;
       margin-bottom: 10px;
+      border: 1px solid #fff;
+      border-radius: 32px;
+      padding: 5px;
+      transition: 0.5s;
+      width: 90%;
     }
     .link:hover {
-      color: #bbb;
+      background: #fff;
+      color: #484848;
     }
   }
+  .card:hover {
+    background: #404040;
+  }
 `;
+
+//igonre

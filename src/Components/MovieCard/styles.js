@@ -4,7 +4,6 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
-  grid-template-areas: '. . . .';
   margin: 50px 20px 0 20px;
   padding-left: 75px;
   .card {
@@ -47,6 +46,15 @@ export const Container = styled.div`
   }
   .card:hover {
     background: #404040;
+  }
+
+  @media (max-width: 800px) {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 `;
 

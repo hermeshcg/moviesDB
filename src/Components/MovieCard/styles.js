@@ -48,7 +48,7 @@ export const Container = styled.div`
     background: #404040;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     margin: 0;
     padding: 0;
     display: flex;
@@ -57,5 +57,3 @@ export const Container = styled.div`
     justify-content: center;
   }
 `;
-
-//igonre

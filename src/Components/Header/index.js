@@ -7,17 +7,20 @@ function Header({ handleSearchMovie, setMovieToSearch }) {
   return (
     <Container>
       <div className="title-area">
-        <h1>Search for any movie</h1>
-        <div className="search-area">
-          <input
-            type="text"
-            placeholder="Insert the name of the movie here :)"
-            onChange={(e) => setMovieToSearch(e.target.value)}
-          />
-          <button type="button" onClick={handleSearchMovie}>
-            <FaSearch />
-          </button>
-        </div>
+        <h1>Search for movies</h1>
+
+        <form onSubmit={handleSearchMovie}>
+          <div className="search-area">
+            <input
+              type="text"
+              placeholder="Search for the title of the movie"
+              onChange={(e) => setMovieToSearch(e.target.value)}
+            />
+            <button type="button" onClick={handleSearchMovie}>
+              <FaSearch />
+            </button>
+          </div>
+        </form>
       </div>
       <div className="themdb">
         <p>Data provided by: </p>

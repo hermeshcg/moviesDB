@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import api from '../../services/api';
 
 import { Container } from './styles';
@@ -27,5 +27,7 @@ function MovieDetail() {
     </Container>
   );
 }
+
+//igonre
 
 export default MovieDetail;

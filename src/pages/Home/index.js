@@ -12,13 +12,18 @@ function Home() {
   const [movies, setMovies] = useState([{}]);
   const [movieToSearch, setMovieToSearch] = useState('');
 
-  async function handleSearchMovie() {
-    const response = await api.get(
-      `?i=tt3896198&apikey=b5fe4238&s=${movieToSearch}`
-    );
-
-    const data = response.data.Search;
-    setMovies(data);
+  async function handleSearchMovie(event) {
+    event.preventDefault();
+    await api
+      .get(`?i=tt3896198&apikey=b5fe4238&s=${movieToSearch}`)
+      .then((response) => {
+        const data = response.data.Search;
+        setMovies(data);
+      })
+      .catch((error) => {
+        alert('Erro ao pesquisar');
+        return;
+      });
   }
 
   useEffect(() => {

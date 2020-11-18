@@ -3,9 +3,13 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin: 40px;
   margin-bottom: 0;
+
+  h1 {
+    color: #fff;
+  }
 
   main {
     display: flex;
@@ -32,20 +36,6 @@ export const Container = styled.div`
           font-weight: normal;
           color: #ccc;
         }
-      }
-    }
-  }
-
-  @media (max-width: 800px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    main {
-      margin: 20px 0;
-      .movie-infos {
-        margin: 10px 0;
       }
     }
   }

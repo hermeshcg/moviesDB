@@ -4,6 +4,7 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
+  grid-template-areas: '. . . .';
   margin: 50px 20px 0 20px;
   padding-left: 75px;
   .card {
@@ -15,6 +16,7 @@ export const Container = styled.div`
     justify-content: center;
     width: min-content;
     margin: 30px 0;
+    box-shadow: 1px 1px 3px #1f1f1f;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     img {
@@ -44,16 +46,6 @@ export const Container = styled.div`
       color: #484848;
     }
   }
-  .card:hover {
-    background: #404040;
-  }
-
-  @media (max-width: 1000px) {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
 `;
+
+//igonre
